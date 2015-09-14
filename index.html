@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pow Press - Willamette Pass</title>
+    <meta name="description" content="View of Odell Lake from the summit of Willamette Pass Willamette Pass Resort is a ski area located in Klamath County, Oregon.&#8230;">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+<body class="t-15 id-13 p-3 ck-modDocument" data-highlight-ridden="1" data-site-name="Pow Press" data-skip-map="">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="wrapper">
+        <div class="tr" style="">
+            <div class="td map">
+                <div id="map-canvas">
+                    <ul>
+                        <!-- list all the resorts. we'll loop over these with jQuery and add a pin for each one -->
+                        <li data-id="2" data-href="north-america/westcoast/" data-ajax="http://powpass.us/north-america/westcoast/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/">Westcoast</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.6062095</span>,<span class="lng">-122.3320708</span></p>
+                        </li>
+                        <li data-id="4" data-href="north-america/westcoast/oregon/cooper-spur-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/cooper-spur-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/cooper-spur-ski-area.html">Cooper Spur</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.4117233</span>,<span class="lng">-121.6055214</span></p>
+                        </li>
+                        <li data-id="6" data-href="north-america/westcoast/california/mt.-shasta-ski-park.html" data-ajax="http://powpass.us/north-america/westcoast/california/mt.-shasta-ski-park.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/mt.-shasta-ski-park.html">Mt. Shasta</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">41.2759798</span>,<span class="lng">-122.2130865</span></p>
+                        </li>
+                        <li data-id="66" data-href="north-america/westcoast/alaska/" data-ajax="http://powpass.us/north-america/westcoast/alaska/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/">Alaska</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">64.8377778</span>,<span class="lng">-147.7163889</span></p>
+                        </li>
+                        <li data-id="50" data-href="north-america/westcoast/washington/badger-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/badger-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/badger-mountain-ski-area.html">Badger Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.4117233</span>,<span class="lng">-121.6055214</span></p>
+                        </li>
+                        <li data-id="67" data-href="north-america/westcoast/alaska/alpenglow-at-arctic-valley.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/alpenglow-at-arctic-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/alpenglow-at-arctic-valley.html">Alpenglow at Arctic Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">61.2501453</span>,<span class="lng">-149.7102446</span></p>
+                        </li>
+                        <li data-id="87" data-href="north-america/rockies/colorado/arapahoe-basin-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/arapahoe-basin-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/arapahoe-basin-ski-area.html">Arapahoe Basin</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.680174</span>,<span class="lng">-105.895972</span></p>
+                        </li>
+                        <li data-id="76" data-href="north-america/rockies/wyoming/beartooth-highway.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/beartooth-highway.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/beartooth-highway.html">Beartooth Highway</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.9817678</span>,<span class="lng">-109.5149293</span></p>
+                        </li>
+                        <li data-id="113" data-href="north-america/rockies/arizona/" data-ajax="http://powpass.us/north-america/rockies/arizona/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/arizona/">Arizona</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.0489281</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="114" data-href="north-america/rockies/arizona/arizona-snowbowl.html" data-ajax="http://powpass.us/north-america/rockies/arizona/arizona-snowbowl.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/arizona/arizona-snowbowl.html">Arizona Snowbowl</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.0489281</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="118" data-href="north-america/rockies/new-mexico/angel-fire-resort.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/angel-fire-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/angel-fire-resort.html">Angel Fire Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.381389</span>,<span class="lng">-105.238889</span></p>
+                        </li>
+                        <li data-id="126" data-href="north-america/rockies/idaho/bald-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/idaho/bald-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/bald-mountain-ski-area.html">Bald Mountain Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.5739668</span>,<span class="lng">-115.865593</span></p>
+                        </li>
+                        <li data-id="143" data-href="north-america/westcoast/nevada/diamond-peak-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/nevada/diamond-peak-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/nevada/diamond-peak-ski-area.html">Diamond Peak Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.2539109</span>,<span class="lng">-119.9236303</span></p>
+                        </li>
+                        <li data-id="147" data-href="north-america/rockies/utah/alta-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/utah/alta-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/alta-ski-area.html">Alta Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.5892448</span>,<span class="lng">-111.6414453</span></p>
+                        </li>
+                        <li data-id="161" data-href="north-america/rockies/montana/big-sky-resort.html" data-ajax="http://powpass.us/north-america/rockies/montana/big-sky-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/big-sky-resort.html">Big Sky Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.2872506</span>,<span class="lng">-111.3958203</span></p>
+                        </li>
+                        <li data-id="178" data-href="north-america/midwest/minnesota/afton-alps.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/afton-alps.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/afton-alps.html">Afton Alps</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.855556</span>,<span class="lng">-92.789167</span></p>
+                        </li>
+                        <li data-id="188" data-href="north-america/pacific/mauna-kea.html" data-ajax="http://powpass.us/north-america/pacific/mauna-kea.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/pacific/mauna-kea.html">Mauna Kea</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">19.820664</span>,<span class="lng">-155.468066</span></p>
+                        </li>
+                        <li data-id="186" data-href="north-america/midwest/minnesota/" data-ajax="http://powpass.us/north-america/midwest/minnesota/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/">Minnesota</a></h3>
+                            <p class="coords">Coordinates:<span class="lat"></span>,<span class="lng"></span></p>
+                        </li>
+                        <li data-id="5" data-href="north-america/westcoast/california/" data-ajax="http://powpass.us/north-america/westcoast/california/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/">California</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.9577016</span>,<span class="lng">-121.2907796</span></p>
+                        </li>
+                        <li data-id="7" data-href="north-america/westcoast/oregon/mt-mood-meadows-ski-resort.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/mt-mood-meadows-ski-resort.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/oregon/mt-mood-meadows-ski-resort.html">Mt Mood Meadows</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.3313954</span>,<span class="lng">-121.6642118</span></p>
+                        </li>
+                        <li data-id="19" data-href="north-america/westcoast/california/alpine-meadows.html" data-ajax="http://powpass.us/north-america/westcoast/california/alpine-meadows.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/alpine-meadows.html">Alpine Meadows</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.162853</span>,<span class="lng">-120.23696</span></p>
+                        </li>
+                        <li data-id="51" data-href="north-america/westcoast/washington/bluewood-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/bluewood-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/bluewood-ski-area.html">Bluewood</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.3201223</span>,<span class="lng">-117.9796634</span></p>
+                        </li>
+                        <li data-id="68" data-href="north-america/westcoast/alaska/alyeska-resort.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/alyeska-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/alyeska-resort.html">Alyeska Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat"></span>,<span class="lng"></span></p>
+                        </li>
+                        <li data-id="74" data-href="north-america/rockies/" data-ajax="http://powpass.us/north-america/rockies/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/">Rocky Mountains</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.737567</span>,<span class="lng">-104.9847179</span></p>
+                        </li>
+                        <li data-id="77" data-href="north-america/rockies/wyoming/big-horn-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/big-horn-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/big-horn-ski-resort.html">Big Horn</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.065902</span>,<span class="lng">-107.376326</span></p>
+                        </li>
+                        <li data-id="86" data-href="north-america/rockies/colorado/" data-ajax="http://powpass.us/north-america/rockies/colorado/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/">Colorado</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.5500507</span>,<span class="lng">-105.7820674</span></p>
+                        </li>
+                        <li data-id="88" data-href="north-america/rockies/colorado/aspen-highlands-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/aspen-highlands-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/aspen-highlands-ski-area.html">Aspen Highlands</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.1942153</span>,<span class="lng">-106.8209133</span></p>
+                        </li>
+                        <li data-id="115" data-href="north-america/rockies/arizona/elk-ridge-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/arizona/elk-ridge-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/arizona/elk-ridge-ski-area.html">Elk Ridge Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.0489281</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="120" data-href="north-america/rockies/new-mexico/pajarito-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/pajarito-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/pajarito-mountain-ski-area.html">Pajarito Mountain Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.5199402</span>,<span class="lng">-105.8700901</span></p>
+                        </li>
+                        <li data-id="127" data-href="north-america/rockies/idaho/bogus-basin.html" data-ajax="http://powpass.us/north-america/rockies/idaho/bogus-basin.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/bogus-basin.html">Bogus Basin</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.643272</span>,<span class="lng">-116.206598</span></p>
+                        </li>
+                        <li data-id="144" data-href="north-america/westcoast/nevada/las-vegas-ski-and-snowboard-resort.html" data-ajax="http://powpass.us/north-america/westcoast/nevada/las-vegas-ski-and-snowboard-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/nevada/las-vegas-ski-and-snowboard-resort.html">Las Vegas Ski and Snowboard Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.3037622</span>,<span class="lng">-115.6796317</span></p>
+                        </li>
+                        <li data-id="148" data-href="north-america/rockies/utah/beaver-mountain.html" data-ajax="http://powpass.us/north-america/rockies/utah/beaver-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/beaver-mountain.html">Beaver Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">41.9682638</span>,<span class="lng">-111.5416015</span></p>
+                        </li>
+                        <li data-id="162" data-href="north-america/rockies/montana/blacktail-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/blacktail-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/blacktail-mountain-ski-area.html">Blacktail Mountain Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.0047351</span>,<span class="lng">-114.2277595</span></p>
+                        </li>
+                        <li data-id="179" data-href="north-america/midwest/minnesota/buck-hill.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/buck-hill.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/buck-hill.html">Buck Hill</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.724</span>,<span class="lng">-93.283</span></p>
+                        </li>
+                        <li data-id="3" data-href="north-america/westcoast/oregon/" data-ajax="http://powpass.us/north-america/westcoast/oregon/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/">Oregon</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.2998485</span>,<span class="lng">-120.8344664</span></p>
+                        </li>
+                        <li data-id="8" data-href="north-america/westcoast/oregon/mt-mood-skibowl.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/mt-mood-skibowl.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/oregon/mt-mood-skibowl.html">Mt Mood Skibowl</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.3017422</span>,<span class="lng">-121.7724581</span></p>
+                        </li>
+                        <li data-id="20" data-href="north-america/westcoast/california/boreal.html" data-ajax="http://powpass.us/north-america/westcoast/california/boreal.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/california/boreal.html">Boreal</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.333315</span>,<span class="lng">-120.350784</span></p>
+                        </li>
+                        <li data-id="52" data-href="north-america/westcoast/washington/crystal-mountain.html" data-ajax="http://powpass.us/north-america/westcoast/washington/crystal-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/crystal-mountain.html">Crystal Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.9281666</span>,<span class="lng">-121.5045349</span></p>
+                        </li>
+                        <li data-id="69" data-href="north-america/westcoast/alaska/eaglecrest-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/eaglecrest-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/eaglecrest-ski-area.html">Eaglecrest Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">58.276111</span>,<span class="lng">-134.515278</span></p>
+                        </li>
+                        <li data-id="78" data-href="north-america/rockies/wyoming/grand-targhee-resort.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/grand-targhee-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/grand-targhee-resort.html">Grand Targhee</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.787113</span>,<span class="lng">-110.959296</span></p>
+                        </li>
+                        <li data-id="89" data-href="north-america/rockies/colorado/aspen-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/aspen-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/aspen-mountain-ski-area.html">Aspen Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat"></span>,<span class="lng"></span></p>
+                        </li>
+                        <li data-id="116" data-href="north-america/rockies/arizona/mount-lemmon-ski-valley.html" data-ajax="http://powpass.us/north-america/rockies/arizona/mount-lemmon-ski-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/arizona/mount-lemmon-ski-valley.html">Mount Lemmon Ski Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">32.2574789</span>,<span class="lng">-110.806179</span></p>
+                        </li>
+                        <li data-id="121" data-href="north-america/rockies/new-mexico/ski-apache.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/ski-apache.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/ski-apache.html">Ski Apache</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">33.3973806</span>,<span class="lng">-105.7891022</span></p>
+                        </li>
+                        <li data-id="125" data-href="north-america/rockies/idaho/" data-ajax="http://powpass.us/north-america/rockies/idaho/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/">Idaho</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.0682019</span>,<span class="lng">-114.7420408</span></p>
+                        </li>
+                        <li data-id="128" data-href="north-america/rockies/idaho/brundage-mountain.html" data-ajax="http://powpass.us/north-america/rockies/idaho/brundage-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/brundage-mountain.html">Brundage Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.643272</span>,<span class="lng">-116.206598</span></p>
+                        </li>
+                        <li data-id="145" data-href="north-america/westcoast/nevada/mount-rose-ski-tahoe.html" data-ajax="http://powpass.us/north-america/westcoast/nevada/mount-rose-ski-tahoe.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/nevada/mount-rose-ski-tahoe.html">Mount Rose Ski Tahoe</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3284843</span>,<span class="lng">-119.8853024</span></p>
+                        </li>
+                        <li data-id="149" data-href="north-america/rockies/utah/brian-head-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/brian-head-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/brian-head-ski-resort.html">Brian Head Ski Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.68218</span>,<span class="lng">-112.831661</span></p>
+                        </li>
+                        <li data-id="163" data-href="north-america/rockies/montana/bridger-bowl-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/bridger-bowl-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/bridger-bowl-ski-area.html">Bridger Bowl Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.0047351</span>,<span class="lng">-114.2277595</span></p>
+                        </li>
+                        <li data-id="177" data-href="north-america/midwest/" data-ajax="http://powpass.us/north-america/midwest/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/">Midwest</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.729553</span>,<span class="lng">-94.6858998</span></p>
+                        </li>
+                        <li data-id="180" data-href="north-america/midwest/minnesota/hyland-ski-and-snowboard-area.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/hyland-ski-and-snowboard-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/hyland-ski-and-snowboard-area.html">Hyland Ski and Snowboard Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.843611</span>,<span class="lng">-93.363889</span></p>
+                        </li>
+                        <li data-id="9" data-href="north-america/westcoast/oregon/summit-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/summit-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/summit-ski-area.html">Summit Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.30422</span>,<span class="lng">-121.7575752</span></p>
+                        </li>
+                        <li data-id="21" data-href="north-america/westcoast/california/donner-ski-ranch.html" data-ajax="http://powpass.us/north-america/westcoast/california/donner-ski-ranch.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/donner-ski-ranch.html">Donner Ski Ranch</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3141295</span>,<span class="lng">-120.3419994</span></p>
+                        </li>
+                        <li data-id="53" data-href="north-america/westcoast/washington/echo-valley-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/echo-valley-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/echo-valley-ski-area.html">Echo Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.9019416</span>,<span class="lng">-120.0804085</span></p>
+                        </li>
+                        <li data-id="70" data-href="north-america/westcoast/alaska/hilltop-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/hilltop-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/hilltop-ski-area.html">Hilltop Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">61.141185</span>,<span class="lng">-149.759419</span></p>
+                        </li>
+                        <li data-id="79" data-href="north-america/rockies/wyoming/jackson-hole-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/jackson-hole-mountain-resort.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/rockies/wyoming/jackson-hole-mountain-resort.html">Jackson Hole</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.5893624</span>,<span class="lng">-110.828848</span></p>
+                        </li>
+                        <li data-id="90" data-href="north-america/rockies/colorado/buttermilk-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/buttermilk-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/buttermilk-ski-area.html">Buttermilk</a></h3>
+                            <p class="coords">Coordinates:<span class="lat"></span>,<span class="lng"></span></p>
+                        </li>
+                        <li data-id="117" data-href="north-america/rockies/arizona/sunrise-park-resort.html" data-ajax="http://powpass.us/north-america/rockies/arizona/sunrise-park-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/arizona/sunrise-park-resort.html">Sunrise Park Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">33.9704102</span>,<span class="lng">-109.5646254</span></p>
+                        </li>
+                        <li data-id="119" data-href="north-america/rockies/new-mexico/" data-ajax="http://powpass.us/north-america/rockies/new-mexico/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/">New Mexico</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.5199402</span>,<span class="lng">-105.8700901</span></p>
+                        </li>
+                        <li data-id="122" data-href="north-america/rockies/new-mexico/sipapu-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/sipapu-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/sipapu-ski-area.html">Sipapu Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.1555831</span>,<span class="lng">-105.5505691</span></p>
+                        </li>
+                        <li data-id="142" data-href="north-america/westcoast/nevada/" data-ajax="http://powpass.us/north-america/westcoast/nevada/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/nevada/">Nevada</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.8026097</span>,<span class="lng">-116.419389</span></p>
+                        </li>
+                        <li data-id="129" data-href="north-america/rockies/idaho/cottonwood-butte.html" data-ajax="http://powpass.us/north-america/rockies/idaho/cottonwood-butte.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/cottonwood-butte.html">Cottonwood Butte</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.0767317</span>,<span class="lng">-116.4344929</span></p>
+                        </li>
+                        <li data-id="150" data-href="north-america/rockies/utah/brighton-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/brighton-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/brighton-ski-resort.html">Brighton Ski Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.5991917</span>,<span class="lng">-111.5834612</span></p>
+                        </li>
+                        <li data-id="164" data-href="north-america/rockies/montana/discovery-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/discovery-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/discovery-ski-area.html">Discovery Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.0047351</span>,<span class="lng">-114.2277595</span></p>
+                        </li>
+                        <li data-id="181" data-href="north-america/midwest/minnesota/lutsen-mountains.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/lutsen-mountains.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/lutsen-mountains.html">Lutsen Mountains</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.664</span>,<span class="lng">-90.714</span></p>
+                        </li>
+                        <li data-id="187" data-href="north-america/pacific/" data-ajax="http://powpass.us/north-america/pacific/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/pacific/">Pacific</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">19.820664</span>,<span class="lng">-155.468066</span></p>
+                        </li>
+                        <li data-id="10" data-href="north-america/westcoast/oregon/timberline-lodge.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/timberline-lodge.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/oregon/timberline-lodge.html">Timberline Lodge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.3310082</span>,<span class="lng">-121.7107149</span></p>
+                        </li>
+                        <li data-id="22" data-href="north-america/westcoast/california/granlibakken.html" data-ajax="http://powpass.us/north-america/westcoast/california/granlibakken.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/granlibakken.html">Granlibakken</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.1432403</span>,<span class="lng">-120.1535249</span></p>
+                        </li>
+                        <li data-id="49" data-href="north-america/westcoast/washington/" data-ajax="http://powpass.us/north-america/westcoast/washington/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/">Washington</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.4234599</span>,<span class="lng">-120.3103494</span></p>
+                        </li>
+                        <li data-id="54" data-href="north-america/westcoast/washington/hurricane-ridge-ski-and-snowboard-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/hurricane-ridge-ski-and-snowboard-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/hurricane-ridge-ski-and-snowboard-area.html">Hurricane Ridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.974722</span>,<span class="lng">-123.518056</span></p>
+                        </li>
+                        <li data-id="71" data-href="north-america/westcoast/alaska/moose-mountain.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/moose-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/moose-mountain.html">Moose Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">64.8377778</span>,<span class="lng">-147.7163889</span></p>
+                        </li>
+                        <li data-id="80" data-href="north-america/rockies/wyoming/pine-creek-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/pine-creek-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/pine-creek-ski-area.html">Pine Creek</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.5893624</span>,<span class="lng">-110.828848</span></p>
+                        </li>
+                        <li data-id="91" data-href="north-america/rockies/colorado/snowmass-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/snowmass-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/snowmass-ski-area.html">Snowmass</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.1942153</span>,<span class="lng">-106.8209133</span></p>
+                        </li>
+                        <li data-id="123" data-href="north-america/rockies/new-mexico/taos-ski-valley.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/taos-ski-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/taos-ski-valley.html">Taos Ski Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.5959999</span>,<span class="lng">-105.4545</span></p>
+                        </li>
+                        <li data-id="130" data-href="north-america/rockies/idaho/kelly-canyon.html" data-ajax="http://powpass.us/north-america/rockies/idaho/kelly-canyon.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/kelly-canyon.html">Kelly Canyon</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.644534</span>,<span class="lng">-111.630883</span></p>
+                        </li>
+                        <li data-id="151" data-href="north-america/rockies/utah/canyons-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/canyons-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/canyons-resort.html">Canyons Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.6877134</span>,<span class="lng">-111.5496557</span></p>
+                        </li>
+                        <li data-id="160" data-href="north-america/rockies/montana/" data-ajax="http://powpass.us/north-america/rockies/montana/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/">Montana</a></h3>
+                            <p class="coords">Coordinates:<span class="lat"></span>,<span class="lng"></span></p>
+                        </li>
+                        <li data-id="165" data-href="north-america/rockies/montana/great-divide-snowsports.html" data-ajax="http://powpass.us/north-america/rockies/montana/great-divide-snowsports.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/great-divide-snowsports.html">Great Divide Snowsports</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.7529927</span>,<span class="lng">-112.3132425</span></p>
+                        </li>
+                        <li data-id="182" data-href="north-america/midwest/minnesota/mount-kato.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/mount-kato.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/mount-kato.html">Mount Kato</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.131389</span>,<span class="lng">-94.036389</span></p>
+                        </li>
+                        <li data-id="11" data-href="north-america/westcoast/oregon/hoodoo-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/hoodoo-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/hoodoo-ski-area.html">Hoodoo Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.4087917</span>,<span class="lng">-121.8800334</span></p>
+                        </li>
+                        <li data-id="23" data-href="north-america/westcoast/california/heavenly-mountain-resort.html" data-ajax="http://powpass.us/north-america/westcoast/california/heavenly-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/heavenly-mountain-resort.html">Heavenly Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.9348063</span>,<span class="lng">-119.9404779</span></p>
+                        </li>
+                        <li data-id="55" data-href="north-america/westcoast/washington/duplicate-of-hoodoo-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/duplicate-of-hoodoo-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/duplicate-of-hoodoo-ski-area.html">Leavenworth</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.613454</span>,<span class="lng">-120.668452</span></p>
+                        </li>
+                        <li data-id="72" data-href="north-america/westcoast/alaska/mount-eyak.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/mount-eyak.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/mount-eyak.html">Mount Eyak</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">64.8377778</span>,<span class="lng">-147.7163889</span></p>
+                        </li>
+                        <li data-id="81" data-href="north-america/rockies/wyoming/snow-king-resort.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/snow-king-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/snow-king-resort.html">Snow King</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.4732805</span>,<span class="lng">-110.7564095</span></p>
+                        </li>
+                        <li data-id="92" data-href="north-america/rockies/colorado/beaver-creek-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/beaver-creek-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/beaver-creek-resort.html">Beaver Creek</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.6052666</span>,<span class="lng">-106.515938</span></p>
+                        </li>
+                        <li data-id="124" data-href="north-america/rockies/new-mexico/sandia-peak-tramway.html" data-ajax="http://powpass.us/north-america/rockies/new-mexico/sandia-peak-tramway.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/new-mexico/sandia-peak-tramway.html">Sandia Peak Tramway</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.5959999</span>,<span class="lng">-105.4545</span></p>
+                        </li>
+                        <li data-id="131" data-href="north-america/rockies/idaho/lost-trail-powder-mountain.html" data-ajax="http://powpass.us/north-america/rockies/idaho/lost-trail-powder-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/lost-trail-powder-mountain.html">Lost Trail Powder Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.644534</span>,<span class="lng">-111.630883</span></p>
+                        </li>
+                        <li data-id="146" data-href="north-america/rockies/utah/" data-ajax="http://powpass.us/north-america/rockies/utah/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/">Utah</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3209801</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="152" data-href="north-america/rockies/utah/deer-valley.html" data-ajax="http://powpass.us/north-america/rockies/utah/deer-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/deer-valley.html">Deer Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.6229421</span>,<span class="lng">-111.4908168</span></p>
+                        </li>
+                        <li data-id="166" data-href="north-america/rockies/montana/maverick-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/maverick-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/maverick-mountain-ski-area.html">Maverick Mountain Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.7529927</span>,<span class="lng">-112.3132425</span></p>
+                        </li>
+                        <li data-id="183" data-href="north-america/midwest/minnesota/spirit-mountain.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/spirit-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/spirit-mountain.html">Spirit Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.719444</span>,<span class="lng">-92.218056</span></p>
+                        </li>
+                        <li data-id="12" data-href="north-america/westcoast/oregon/mount-bachelor-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/mount-bachelor-ski-area.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/oregon/mount-bachelor-ski-area.html">Mount Bachelor</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.9952072</span>,<span class="lng">-121.4156199</span></p>
+                        </li>
+                        <li data-id="24" data-href="north-america/westcoast/california/homewood-mountain-resort.html" data-ajax="http://powpass.us/north-america/westcoast/california/homewood-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/homewood-mountain-resort.html">Homewood Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.0856142</span>,<span class="lng">-120.1604103</span></p>
+                        </li>
+                        <li data-id="63" data-href="north-america/westcoast/washington/snoqualmie.html" data-ajax="http://powpass.us/north-america/westcoast/washington/snoqualmie.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/snoqualmie.html">White Pass</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.6374567</span>,<span class="lng">-121.3913116</span></p>
+                        </li>
+                        <li data-id="73" data-href="north-america/westcoast/alaska/skiland.html" data-ajax="http://powpass.us/north-america/westcoast/alaska/skiland.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/alaska/skiland.html">Skiland</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">65.0457077</span>,<span class="lng">-147.4172813</span></p>
+                        </li>
+                        <li data-id="75" data-href="north-america/rockies/wyoming/" data-ajax="http://powpass.us/north-america/rockies/wyoming/?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/">Wyoming</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.4799291</span>,<span class="lng">-110.7624282</span></p>
+                        </li>
+                        <li data-id="82" data-href="north-america/rockies/wyoming/snowy-range-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/snowy-range-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/snowy-range-ski-area.html">Snowy Range</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.4732805</span>,<span class="lng">-110.7564095</span></p>
+                        </li>
+                        <li data-id="93" data-href="north-america/rockies/colorado/breckenridge-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/breckenridge-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/breckenridge-ski-resort.html">Breckenridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.4809375</span>,<span class="lng">-106.0673629</span></p>
+                        </li>
+                        <li data-id="132" data-href="north-america/rockies/idaho/lookout-pass-ski-and-recreation-area.html" data-ajax="http://powpass.us/north-america/rockies/idaho/lookout-pass-ski-and-recreation-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/lookout-pass-ski-and-recreation-area.html">Lookout Pass Ski</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.644534</span>,<span class="lng">-111.630883</span></p>
+                        </li>
+                        <li data-id="153" data-href="north-america/rockies/utah/park-city-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/park-city-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/park-city-mountain-resort.html">Park City Mountain Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.6511222</span>,<span class="lng">-111.50783</span></p>
+                        </li>
+                        <li data-id="167" data-href="north-america/rockies/montana/montana-snowbowl.html" data-ajax="http://powpass.us/north-america/rockies/montana/montana-snowbowl.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/montana-snowbowl.html">Montana Snowbowl</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">46.969246</span>,<span class="lng">-114.0154606</span></p>
+                        </li>
+                        <li data-id="184" data-href="north-america/midwest/minnesota/welch-village.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/welch-village.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/welch-village.html">Welch Village</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.560556</span>,<span class="lng">-92.727222</span></p>
+                        </li>
+                        <li data-id="13" data-href="north-america/westcoast/oregon/willamette-pass-resort.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/willamette-pass-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/willamette-pass-resort.html">Willamette Pass</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.601667</span>,<span class="lng">-122.031667</span></p>
+                        </li>
+                        <li data-id="25" data-href="north-america/westcoast/california/kirkwood-mountain-resort.html" data-ajax="http://powpass.us/north-america/westcoast/california/kirkwood-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/kirkwood-mountain-resort.html">Kirkwood Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.683109</span>,<span class="lng">-120.066614</span></p>
+                        </li>
+                        <li data-id="56" data-href="north-america/westcoast/washington/loup-loup-ski-bowl.html" data-ajax="http://powpass.us/north-america/westcoast/washington/loup-loup-ski-bowl.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/loup-loup-ski-bowl.html">Loup Loup Bowl</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.3959294</span>,<span class="lng">-119.9116516</span></p>
+                        </li>
+                        <li data-id="83" data-href="north-america/rockies/wyoming/white-pine-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/white-pine-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/white-pine-ski-resort.html">White Pine</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.8661111</span>,<span class="lng">-109.8647222</span></p>
+                        </li>
+                        <li data-id="94" data-href="north-america/rockies/colorado/copper-mountain.html" data-ajax="http://powpass.us/north-america/rockies/colorado/copper-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/copper-mountain.html">Copper Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.501419</span>,<span class="lng">-106.1516265</span></p>
+                        </li>
+                        <li data-id="133" data-href="north-america/rockies/idaho/magic-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/idaho/magic-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/magic-mountain-resort.html">Magic Mountain Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.644534</span>,<span class="lng">-111.630883</span></p>
+                        </li>
+                        <li data-id="154" data-href="north-america/rockies/utah/powder-mountain-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/utah/powder-mountain-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/powder-mountain-ski-area.html">Powder Mountain Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.6511222</span>,<span class="lng">-111.50783</span></p>
+                        </li>
+                        <li data-id="168" data-href="north-america/rockies/montana/moonlight-basin.html" data-ajax="http://powpass.us/north-america/rockies/montana/moonlight-basin.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/moonlight-basin.html">Moonlight Basin</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.283704</span>,<span class="lng">-111.439133</span></p>
+                        </li>
+                        <li data-id="185" data-href="north-america/midwest/minnesota/wild-mountain.html" data-ajax="http://powpass.us/north-america/midwest/minnesota/wild-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/midwest/minnesota/wild-mountain.html">Wild Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.488889</span>,<span class="lng">-92.705556</span></p>
+                        </li>
+                        <li data-id="14" data-href="north-america/westcoast/oregon/anthony-lakes-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/anthony-lakes-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/anthony-lakes-ski-area.html">Anthony Lakes</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">44.7748748</span>,<span class="lng">-117.8343848</span></p>
+                        </li>
+                        <li data-id="26" data-href="north-america/westcoast/california/northstar.html" data-ajax="http://powpass.us/north-america/westcoast/california/northstar.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/california/northstar.html">Northstar</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.2870382</span>,<span class="lng">-120.1053926</span></p>
+                        </li>
+                        <li data-id="57" data-href="north-america/westcoast/washington/meany-lodge.html" data-ajax="http://powpass.us/north-america/westcoast/washington/meany-lodge.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/meany-lodge.html">Meany Lodge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.7510741</span>,<span class="lng">-120.7401386</span></p>
+                        </li>
+                        <li data-id="84" data-href="north-america/rockies/wyoming/hogadon-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/wyoming/hogadon-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/wyoming/hogadon-ski-area.html">Hogadon</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.7439177</span>,<span class="lng">-106.3270483</span></p>
+                        </li>
+                        <li data-id="95" data-href="north-america/rockies/colorado/crested-butte-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/crested-butte-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/crested-butte-mountain-resort.html">Crested Butte</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.501419</span>,<span class="lng">-106.1516265</span></p>
+                        </li>
+                        <li data-id="134" data-href="north-america/rockies/idaho/pebble-creek.html" data-ajax="http://powpass.us/north-america/rockies/idaho/pebble-creek.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/pebble-creek.html">Pebble Creek</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.7785388</span>,<span class="lng">-112.1592983</span></p>
+                        </li>
+                        <li data-id="155" data-href="north-america/rockies/utah/snowbasin.html" data-ajax="http://powpass.us/north-america/rockies/utah/snowbasin.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/snowbasin.html">Snowbasin</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3209801</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="169" data-href="north-america/rockies/montana/red-lodge-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/montana/red-lodge-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/red-lodge-mountain-resort.html">Red Lodge Mountain Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.208278</span>,<span class="lng">-109.2757116</span></p>
+                        </li>
+                        <li data-id="15" data-href="north-america/westcoast/oregon/ferguson-ridge-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/ferguson-ridge-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/ferguson-ridge-ski-area.html">Ferguson Ridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.2821717</span>,<span class="lng">-117.1125734</span></p>
+                        </li>
+                        <li data-id="27" data-href="north-america/westcoast/california/sierra-at-tahoe.html" data-ajax="http://powpass.us/north-america/westcoast/california/sierra-at-tahoe.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/california/sierra-at-tahoe.html">Sierra at Tahoe</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.8001644</span>,<span class="lng">-120.0806981</span></p>
+                        </li>
+                        <li data-id="58" data-href="north-america/westcoast/washington/mission-ridge-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/mission-ridge-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/mission-ridge-ski-area.html">Mission Ridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.2924455</span>,<span class="lng">-120.3997707</span></p>
+                        </li>
+                        <li data-id="96" data-href="north-america/rockies/colorado/durango-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/durango-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/durango-mountain-resort.html">Durango Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.6308486</span>,<span class="lng">-107.8142308</span></p>
+                        </li>
+                        <li data-id="135" data-href="north-america/rockies/idaho/pomerelle.html" data-ajax="http://powpass.us/north-america/rockies/idaho/pomerelle.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/pomerelle.html">Pomerelle</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.5824766</span>,<span class="lng">-114.4503912</span></p>
+                        </li>
+                        <li data-id="156" data-href="north-america/rockies/utah/snowbird-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/utah/snowbird-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/snowbird-ski-area.html">Snowbird Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.58135</span>,<span class="lng">-111.656316</span></p>
+                        </li>
+                        <li data-id="170" data-href="north-america/rockies/montana/teton-pass-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/teton-pass-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/teton-pass-ski-area.html">Teton Pass Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.208278</span>,<span class="lng">-109.2757116</span></p>
+                        </li>
+                        <li data-id="16" data-href="north-america/westcoast/oregon/mount-ashland-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/mount-ashland-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/mount-ashland-ski-area.html">Mount Ashland</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.183065</span>,<span class="lng">-122.666885</span></p>
+                        </li>
+                        <li data-id="28" data-href="north-america/westcoast/california/squaw-valley-ski-resort.html" data-ajax="http://powpass.us/north-america/westcoast/california/squaw-valley-ski-resort.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/california/squaw-valley-ski-resort.html">Squaw Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.1965298</span>,<span class="lng">-120.2358802</span></p>
+                        </li>
+                        <li data-id="59" data-href="north-america/westcoast/washington/mount-spokane-ski-and-snowboard-park.html" data-ajax="http://powpass.us/north-america/westcoast/washington/mount-spokane-ski-and-snowboard-park.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/mount-spokane-ski-and-snowboard-park.html">Mount Spokane</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.9213776</span>,<span class="lng">-117.096385</span></p>
+                        </li>
+                        <li data-id="97" data-href="north-america/rockies/colorado/echo-mountain-park.html" data-ajax="http://powpass.us/north-america/rockies/colorado/echo-mountain-park.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/echo-mountain-park.html">Echo Mountain Park</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.6844797</span>,<span class="lng">-105.5199524</span></p>
+                        </li>
+                        <li data-id="136" data-href="north-america/rockies/idaho/rotarun-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/idaho/rotarun-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/rotarun-ski-area.html">Rotarun Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.4974059</span>,<span class="lng">-114.3654978</span></p>
+                        </li>
+                        <li data-id="157" data-href="north-america/rockies/utah/solitude-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/solitude-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/solitude-mountain-resort.html">Solitude Mountain Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3209801</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="171" data-href="north-america/rockies/montana/turner-mountain-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/montana/turner-mountain-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/turner-mountain-ski-resort.html">Turner Mountain Ski Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.6049218</span>,<span class="lng">-115.6306314</span></p>
+                        </li>
+                        <li data-id="17" data-href="north-america/westcoast/oregon/spout-springs-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/oregon/spout-springs-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/oregon/spout-springs-ski-area.html">Spout Springs</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.8046924</span>,<span class="lng">-118.4986092</span></p>
+                        </li>
+                        <li data-id="29" data-href="north-america/westcoast/california/sugar-bowl.html" data-ajax="http://powpass.us/north-america/westcoast/california/sugar-bowl.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/california/sugar-bowl.html">Sugar Bowl</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.305297</span>,<span class="lng">-120.3385949</span></p>
+                        </li>
+                        <li data-id="60" data-href="north-america/westcoast/washington/sitzmark-lifts.html" data-ajax="http://powpass.us/north-america/westcoast/washington/sitzmark-lifts.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/sitzmark-lifts.html">Sitzmark Lifts</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">42.183065</span>,<span class="lng">-122.666885</span></p>
+                        </li>
+                        <li data-id="98" data-href="north-america/rockies/colorado/eldora-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/eldora-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/eldora-mountain-resort.html">Eldora Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.9357517</span>,<span class="lng">-105.5808824</span></p>
+                        </li>
+                        <li data-id="137" data-href="north-america/rockies/idaho/schweitzer-mountain.html" data-ajax="http://powpass.us/north-america/rockies/idaho/schweitzer-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/schweitzer-mountain.html">Schweitzer Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.3674936</span>,<span class="lng">-116.6232873</span></p>
+                        </li>
+                        <li data-id="158" data-href="north-america/rockies/utah/sundance-resort.html" data-ajax="http://powpass.us/north-america/rockies/utah/sundance-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/sundance-resort.html">Sundance Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3209801</span>,<span class="lng">-111.0937311</span></p>
+                        </li>
+                        <li data-id="172" data-href="north-america/rockies/montana/whitefish-mountain-resort.html" data-ajax="http://powpass.us/north-america/rockies/montana/whitefish-mountain-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/whitefish-mountain-resort.html">Whitefish Mountain Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.4809579</span>,<span class="lng">-114.3577998</span></p>
+                        </li>
+                        <li data-id="32" data-href="north-america/westcoast/california/tahoe-donner.html" data-ajax="http://powpass.us/north-america/westcoast/california/tahoe-donner.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/tahoe-donner.html">Tahoe Donner</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3550429</span>,<span class="lng">-120.2575034</span></p>
+                        </li>
+                        <li data-id="61" data-href="north-america/westcoast/washington/stevens-pass-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/stevens-pass-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/stevens-pass-ski-area.html">Stevens Pass</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">47.74443</span>,<span class="lng">-121.0892824</span></p>
+                        </li>
+                        <li data-id="99" data-href="north-america/rockies/colorado/hesperus-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/hesperus-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/hesperus-ski-area.html">Hesperus</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.9357517</span>,<span class="lng">-105.5808824</span></p>
+                        </li>
+                        <li data-id="138" data-href="north-america/rockies/idaho/snowhaven.html" data-ajax="http://powpass.us/north-america/rockies/idaho/snowhaven.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/snowhaven.html">Snowhaven</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.867481</span>,<span class="lng">-116.089268</span></p>
+                        </li>
+                        <li data-id="159" data-href="north-america/rockies/utah/wolf-mountain.html" data-ajax="http://powpass.us/north-america/rockies/utah/wolf-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/utah/wolf-mountain.html">Wolf Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">41.3103442</span>,<span class="lng">-111.8648661</span></p>
+                        </li>
+                        <li data-id="173" data-href="north-america/rockies/montana/yellowstone-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/montana/yellowstone-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/yellowstone-ski-resort.html">Yellowstone Ski Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.4809579</span>,<span class="lng">-114.3577998</span></p>
+                        </li>
+                        <li data-id="33" data-href="north-america/westcoast/california/badger-pass.html" data-ajax="http://powpass.us/north-america/westcoast/california/badger-pass.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/badger-pass.html">Badger Pass</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.5368803</span>,<span class="lng">-119.6562684</span></p>
+                        </li>
+                        <li data-id="62" data-href="north-america/westcoast/washington/the-summit-at-snoqualmie.html" data-ajax="http://powpass.us/north-america/westcoast/washington/the-summit-at-snoqualmie.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/washington/the-summit-at-snoqualmie.html">Snoqualmie</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">45.8046924</span>,<span class="lng">-118.4986092</span></p>
+                        </li>
+                        <li data-id="100" data-href="north-america/rockies/colorado/kendall-mountain.html" data-ajax="http://powpass.us/north-america/rockies/colorado/kendall-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/kendall-mountain.html">Kendall Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.7933304</span>,<span class="lng">-107.6289496</span></p>
+                        </li>
+                        <li data-id="139" data-href="north-america/rockies/idaho/soldier-mountain.html" data-ajax="http://powpass.us/north-america/rockies/idaho/soldier-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/soldier-mountain.html">Soldier Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.485512</span>,<span class="lng">-114.82938</span></p>
+                        </li>
+                        <li data-id="174" data-href="north-america/rockies/montana/lost-trail-powder-mountain.html" data-ajax="http://powpass.us/north-america/rockies/montana/lost-trail-powder-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/lost-trail-powder-mountain.html">Lost Trail Powder Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.4809579</span>,<span class="lng">-114.3577998</span></p>
+                        </li>
+                        <li data-id="34" data-href="north-america/westcoast/california/bear-valley.html" data-ajax="http://powpass.us/north-america/westcoast/california/bear-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/bear-valley.html">Bear Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.467011</span>,<span class="lng">-120.044181</span></p>
+                        </li>
+                        <li data-id="64" data-href="north-america/westcoast/washington/mt.-baker-ski-area.html" data-ajax="http://powpass.us/north-america/westcoast/washington/mt.-baker-ski-area.html?ajax=1" data-ridden="1">
+                            <h3><a href="north-america/westcoast/washington/mt.-baker-ski-area.html">Mt. Baker</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.7773426</span>,<span class="lng">-121.8132008</span></p>
+                        </li>
+                        <li data-id="101" data-href="north-america/rockies/colorado/keystone-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/keystone-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/keystone-resort.html">Keystone Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.607552</span>,<span class="lng">-105.9436315</span></p>
+                        </li>
+                        <li data-id="141" data-href="north-america/rockies/idaho/tamarack-resort.html" data-ajax="http://powpass.us/north-america/rockies/idaho/tamarack-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/tamarack-resort.html">Tamarack Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.6971294</span>,<span class="lng">-114.3517172</span></p>
+                        </li>
+                        <li data-id="175" data-href="north-america/rockies/montana/showdown-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/montana/showdown-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/montana/showdown-ski-area.html">Showdown Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">48.4809579</span>,<span class="lng">-114.3577998</span></p>
+                        </li>
+                        <li data-id="35" data-href="north-america/westcoast/california/dodge-ridge.html" data-ajax="http://powpass.us/north-america/westcoast/california/dodge-ridge.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/dodge-ridge.html">Dodge Ridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">38.191072</span>,<span class="lng">-119.96196</span></p>
+                        </li>
+                        <li data-id="102" data-href="north-america/rockies/colorado/loveland-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/loveland-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/loveland-ski-area.html">Loveland Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.680174</span>,<span class="lng">-105.895972</span></p>
+                        </li>
+                        <li data-id="140" data-href="north-america/rockies/idaho/sun-valley.html" data-ajax="http://powpass.us/north-america/rockies/idaho/sun-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/idaho/sun-valley.html">Sun Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">43.6971294</span>,<span class="lng">-114.3517172</span></p>
+                        </li>
+                        <li data-id="36" data-href="north-america/westcoast/california/june-mountain.html" data-ajax="http://powpass.us/north-america/westcoast/california/june-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/june-mountain.html">June Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.7797825</span>,<span class="lng">-119.0754232</span></p>
+                        </li>
+                        <li data-id="103" data-href="north-america/rockies/colorado/monarch-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/monarch-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/monarch-ski-area.html">Monarch Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">36.453225</span>,<span class="lng">-118.5657547</span></p>
+                        </li>
+                        <li data-id="37" data-href="north-america/westcoast/california/mammoth-mountain.html" data-ajax="http://powpass.us/north-america/westcoast/california/mammoth-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/mammoth-mountain.html">Mammoth Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.6506757</span>,<span class="lng">-119.0411816</span></p>
+                        </li>
+                        <li data-id="104" data-href="north-america/rockies/colorado/powderhorn-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/powderhorn-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/powderhorn-resort.html">Powderhorn Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.0693962</span>,<span class="lng">-108.1507337</span></p>
+                        </li>
+                        <li data-id="39" data-href="north-america/westcoast/california/china-peak.html" data-ajax="http://powpass.us/north-america/westcoast/california/china-peak.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/china-peak.html">China Peak</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.2310247</span>,<span class="lng">-119.1741284</span></p>
+                        </li>
+                        <li data-id="105" data-href="north-america/rockies/colorado/silverton-mountain.html" data-ajax="http://powpass.us/north-america/rockies/colorado/silverton-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/silverton-mountain.html">Silverton Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.8846291</span>,<span class="lng">-107.6657103</span></p>
+                        </li>
+                        <li data-id="40" data-href="north-america/westcoast/california/alta-sierra-ski-resort.html" data-ajax="http://powpass.us/north-america/westcoast/california/alta-sierra-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/alta-sierra-ski-resort.html">Alta Sierra</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.2310247</span>,<span class="lng">-119.1741284</span></p>
+                        </li>
+                        <li data-id="106" data-href="north-america/rockies/colorado/ski-cooper.html" data-ajax="http://powpass.us/north-america/rockies/colorado/ski-cooper.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/ski-cooper.html">Ski Cooper</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.3647469</span>,<span class="lng">-106.2919181</span></p>
+                        </li>
+                        <li data-id="42" data-href="north-america/westcoast/california/bear-mountain.html" data-ajax="http://powpass.us/north-america/westcoast/california/bear-mountain.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/bear-mountain.html">Bear Mountain</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.0960569</span>,<span class="lng">-119.0942833</span></p>
+                        </li>
+                        <li data-id="107" data-href="north-america/rockies/colorado/steamboat-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/steamboat-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/steamboat-ski-resort.html">Steamboat</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.457462</span>,<span class="lng">-106.805595</span></p>
+                        </li>
+                        <li data-id="43" data-href="north-america/westcoast/california/kratka-ridge.html" data-ajax="http://powpass.us/north-america/westcoast/california/kratka-ridge.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/kratka-ridge.html">Kratka Ridge</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.3466666</span>,<span class="lng">-117.8997222</span></p>
+                        </li>
+                        <li data-id="108" data-href="north-america/rockies/colorado/sunlight-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/sunlight-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/sunlight-ski-area.html">Sunlight Ski Area</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">40.457462</span>,<span class="lng">-106.805595</span></p>
+                        </li>
+                        <li data-id="44" data-href="north-america/westcoast/california/mount-baldy-ski-lifts.html" data-ajax="http://powpass.us/north-america/westcoast/california/mount-baldy-ski-lifts.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/mount-baldy-ski-lifts.html">Mount Baldy</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.2499661</span>,<span class="lng">-117.6386605</span></p>
+                        </li>
+                        <li data-id="109" data-href="north-america/rockies/colorado/telluride-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/telluride-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/telluride-ski-resort.html">Telluride Ski</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.9374939</span>,<span class="lng">-107.8122852</span></p>
+                        </li>
+                        <li data-id="45" data-href="north-america/westcoast/california/mount-waterman.html" data-ajax="http://powpass.us/north-america/westcoast/california/mount-waterman.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/mount-waterman.html">Mount Waterman</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">33.8620296</span>,<span class="lng">-117.5457055</span></p>
+                        </li>
+                        <li data-id="110" data-href="north-america/rockies/colorado/vail-ski-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/vail-ski-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/vail-ski-resort.html">Vail Ski Resort</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.704909</span>,<span class="lng">-106.682825</span></p>
+                        </li>
+                        <li data-id="46" data-href="north-america/westcoast/california/mountain-high.html" data-ajax="http://powpass.us/north-america/westcoast/california/mountain-high.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/mountain-high.html">Mountain High</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.3768823</span>,<span class="lng">-117.6915502</span></p>
+                        </li>
+                        <li data-id="111" data-href="north-america/rockies/colorado/winter-park-resort.html" data-ajax="http://powpass.us/north-america/rockies/colorado/winter-park-resort.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/winter-park-resort.html">Winter Park</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">39.8870685</span>,<span class="lng">-105.7625834</span></p>
+                        </li>
+                        <li data-id="47" data-href="north-america/westcoast/california/snow-summit.html" data-ajax="http://powpass.us/north-america/westcoast/california/snow-summit.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/snow-summit.html">Snow Summit</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.236588</span>,<span class="lng">-116.889735</span></p>
+                        </li>
+                        <li data-id="112" data-href="north-america/rockies/colorado/wolf-creek-ski-area.html" data-ajax="http://powpass.us/north-america/rockies/colorado/wolf-creek-ski-area.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/rockies/colorado/wolf-creek-ski-area.html">Wolf Creek</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">37.4755573</span>,<span class="lng">-106.7918456</span></p>
+                        </li>
+                        <li data-id="48" data-href="north-america/westcoast/california/snow-valley.html" data-ajax="http://powpass.us/north-america/westcoast/california/snow-valley.html?ajax=1" data-ridden="">
+                            <h3><a href="north-america/westcoast/california/snow-valley.html">Snow Valley</a></h3>
+                            <p class="coords">Coordinates:<span class="lat">34.2248888</span>,<span class="lng">-117.0355565</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="td map-side" style="">
+                <div class="fixed">
+                    <div class="content">
+                        <h1>
+          <!-- set the menutitle or pagetitle -->
+          <span>Willamette Pass</span><i class="icon-circle-blank"></i>              
+              </h1>
+                        <ul class="nav">
+                            <li class="prev">
+                                <a href="north-america/westcoast/oregon/mount-bachelor-ski-area.html?sm=1"><i class="icon-double-angle-left"></i>&nbsp;Mount Bachelor</a>
+
+                            </li>
+                            <li class="next">
+                                <a href="north-america/westcoast/oregon/anthony-lakes-ski-area.html?sm=1">Anthony Lakes&nbsp;<i class="icon-double-angle-right"></i></a>
+
+                            </li>
+                        </ul>
+
+                        <!-- if i have a parent, view others in it -->
+                        <ul class="nav">
+                            <li style="width:100%;float:none;text-align:center"><a href="north-america/westcoast/oregon/">&ndash;&nbsp;&nbsp;View Oregon Resorts&nbsp;&nbsp;&ndash;</a></li>
+                        </ul>
+                        <!-- ok, the actual content -->
+                        <div class="thumb tright">
+                            <div class="thumbinner">
+                                <a class="image" href="http://en.wikipedia.org/wiki/File:Willamette_Pass_summit.JPG"><img class="thumbimage" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Willamette_Pass_summit.JPG/440px-Willamette_Pass_summit.JPG" alt="" width="220" height="165" /></a>
+                                <div class="thumbcaption">
+                                    <div class="magnify">
+                                        <a class="internal" title="Enlarge" href="http://en.wikipedia.org/wiki/File:Willamette_Pass_summit.JPG"><img src="http://bits.wikimedia.org/static-1.21wmf11/skins/common/images/magnify-clip.png" alt="" width="15" height="11" /></a>
+                                    </div>
+                                    View of <a title="Odell Lake (Oregon)" href="http://en.wikipedia.org/wiki/Odell_Lake_(Oregon)">Odell Lake</a> from the summit of Willamette Pass
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong>Willamette Pass Resort</strong><span> is a </span><a class="mw-redirect" title="Ski area" href="http://en.wikipedia.org/wiki/Ski_area">ski area</a><span> located in </span><a title="Klamath County, Oregon" href="http://en.wikipedia.org/wiki/Klamath_County,_Oregon">Klamath County, Oregon</a><span>. It operates on federal land under special use permit on the </span><a title="Willamette National Forest" href="http://en.wikipedia.org/wiki/Willamette_National_Forest">Willamette</a><span> and </span><a title="Deschutes National Forest" href="http://en.wikipedia.org/wiki/Deschutes_National_Forest">Deschutes National Forests</a><span>. It is situated in the </span><a title="Cascade Range" href="http://en.wikipedia.org/wiki/Cascade_Range">Cascade Range</a><span>, between </span><a title="Oakridge, Oregon" href="http://en.wikipedia.org/wiki/Oakridge,_Oregon">Oakridge, Oregon</a><span> and</span><a title="La Pine, Oregon" href="http://en.wikipedia.org/wiki/La_Pine,_Oregon">La Pine, Oregon</a><span>. The ski area is currently locally owned and operated by the Wiper Family, of Eugene, Oregon.</span></p>
+                        <h2><span id="Ski_area_information" class="mw-headline">Ski area information</span></h2>
+                        <p>Willamette Pass Resort is a year-round destination with two distinct seasons: A winter ski season and a summer season. In the summer, hiking, sightseeing, disc golf and downhill mountain biking are available, as the Eagle Peak Accelerator is converted into a 6-person Gondola.</p>
+                        <p>Willamette Pass is best known for having one of the steepest runs in the world, "RTS", which at its steepest point is 52 degrees. It hosted the 1993 Subaru U.S. <a title="Speed skiing" href="http://en.wikipedia.org/wiki/Speed_skiing">Speed Skiing</a> Championships, where a top speed of 116.56 mph (187 km/h) was achieved. <sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Willamette_Pass_Resort#cite_note-1">[1]</a></sup></p>
+                        <p>The area is a popular place for nearby schools to visit, with lessons and plenty of green runs. The lodge has a restaurant, shop, lost-and-found service, and ski and snowboard rentals.</p>
+                        <p>Snowshoeing, Nordic skiing, and inner tubing activities are also available.</p>
+                        <h2><span id="Resort_statistics" class="mw-headline">Resort statistics</span></h2>
+                        <h3><span id="Elevation" class="mw-headline">Elevation</span></h3>
+                        <ul>
+                            <li>Summit: 6683 ft (2037 m)</li>
+                            <li>Base: 5120 ft (1561 m)</li>
+                            <li>Midway: 5899 ft (1798 m)</li>
+                            <li>Vertical Rise: 1563 ft (476 m)</li>
+                        </ul>
+                        <div class="thumb tright">
+                            <div class="thumbinner"><span style="font-size: 1.17em; line-height: 1.5em;">Trails</span></div>
+                        </div>
+                        <ul>
+                            <li>Skiable area: 555 acres (2.24 km²)</li>
+                            <li>Groomable area: 225 acres</li>
+                            <li>Trails: 29 total 20% Beginner 45% Intermediate 35% Advanced/Expert</li>
+                            <li>Nordic trails: up to 12.43 (20 km) groomed</li>
+                            <li>Longest run: "Kaleidoscope/Perseverence" - 2.1 mi (3 km)</li>
+                            <li>Steepest run: "RTS"- up to 52°</li>
+                            <li>Average annual snowfall: 430 in/year (10.922 m/year)</li>
+                            <li><a title="Terrain park" href="http://en.wikipedia.org/wiki/Terrain_park">Terrain Parks</a>: 2 (By George and Timberglades)</li>
+                            <li>
+                                Peaks: 2
+                                <ul>
+                                    <li>Eagle Peak</li>
+                                    <li>Peak 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h3><span id="Lifts" class="mw-headline">Lifts</span></h3>
+                        <div class="thumb tright">
+                            <div class="thumbinner">
+                                <div class="thumbcaption">The only <a title="Detachable chairlift" href="http://en.wikipedia.org/wiki/Detachable_chairlift">High Speed Six-Pack</a> in<a title="Oregon" href="http://en.wikipedia.org/wiki/Oregon">Oregon</a>.</div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                6 Total
+                                <ul>
+                                    <li>1 High-Speed Six Pack <em>Eagle Peak Accelerator</em> (<a class="mw-redirect" title="Doppelmayr CTEC" href="http://en.wikipedia.org/wiki/Doppelmayr_CTEC">Doppelmayr CTEC</a>)</li>
+                                    <li>1 Triple Chair <em>Twilight</em> (<a title="CTEC" href="http://en.wikipedia.org/wiki/CTEC">CTEC</a>)</li>
+                                    <li>3 Triple Chairs <em>Sleepy Hollow, Midway, and Peak 2 Lift</em> (<a title="Riblet Tramway Company" href="http://en.wikipedia.org/wiki/Riblet_Tramway_Company">Riblet Tramway Company</a>)</li>
+                                    <li>1 Magic Carpet</li>
+                                </ul>
+                            </li>
+                            <li>Lift capacity: 11,100 skiers per hour</li>
+                        </ul>
+                        <p><span> </span></p>
+                        <!-- print view others again -->
+                        <ul class="nav">
+                            <li style="width:100%;float:none;text-align:center"><a href="north-america/westcoast/oregon/">&ndash;&nbsp;&nbsp;View Oregon Resorts&nbsp;&nbsp;&ndash;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- javascript includes -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/components/boilerx/js/vendor/jquery-1.8.3.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="assets/js/jquery.address-1.5.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVzVg-8MUh3sa-aEAMm4GsFGY-k4ofwcY&sensor=true">
+    </script>
+    <script type="text/javascript">
+        $('document').ready(function() {
+            $.address.state('/');
+
+            var _pins = [];
+            $('#map-canvas > ul > li').each(function() { // for each of our map pins
+                // pull some data out of the DOM
+                var _title = $(this).find('h3').html();
+                var _lat = $(this).find('.lat').html();
+                var _lng = $(this).find('.lng').html();
+                
+                _pins.push({ // push a DTO object for each pin into _pins Array
+                    title: _title,
+                    lat: _lat,
+                    lng: _lng,
+                    href: $(this).data('href'),
+                    ajax: $(this).data('ajax'),
+                    ridden: $(this).data('ridden'),
+                    id: $(this).data('id')
+                });
+            });
+
+            // create the map
+            var mapOptions = {
+                center: new google.maps.LatLng(43.601667, -122.031667),
+                zoom: 7,
+                minZoom: 5,
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            
+            var _openWindow;
+            var _showRidden = ($('body').data('highlight-ridden') == '1') ? true : false;
+            var _markers = [];
+            var _circles = [];
+
+            var _clickedMarker;
+            for (var i = 0; i < _pins.length; i++) { // for each pin
+                var infowindow = new google.maps.InfoWindow({ // create an info window
+                    content: '<div class="infowindow"><h1>' + _pins[i].title + '</h1></div>'
+                });
+
+                var marker = new google.maps.Marker({ // create a marker
+                    position: new google.maps.LatLng(_pins[i].lat, _pins[i].lng),
+                    map: map,
+                    title: _pins[i].title,
+                    pid: i,
+                    href: _pins[i].href,
+                    ajax: _pins[i].ajax,
+                    zIndex: (_pins[i].ridden) ? 1000 + i : i,
+                    icon: 'assets/img/' + ((_showRidden && _pins[i].ridden) ? 'icon_snowboarding_ridden.png' : 'icon_snowboarding.png')
+                });
+
+                if (marker.pid == 13) _clickedMarker = marker; // 13 is the id of the current "page"
+
+                _markers.push(marker);
+
+                var populationOptions = { // used to create circle overlays
+                    strokeColor: (_pins[i].ridden) ? "#f5f375" : "#f5f375",
+                    strokeOpacity: 0.6,
+                    strokeWeight: 2,
+                    fillColor: (_pins[i].ridden) ? "#f5f375" : "#f5f375",
+                    fillOpacity: 0.6,
+                    pid: i,
+                    center: new google.maps.LatLng(_pins[i].lat, _pins[i].lng),
+                    radius: 5600,
+                    map: (_pins[i].id == 13) ? map : null
+                };
+                cityCircle = new google.maps.Circle(populationOptions);
+                _circles.push(cityCircle);
+
+                // process multiple info windows
+                (function(marker, i, _clickedMarker) {
+                    // add click event
+                    google.maps.event.addListener(marker, 'click', function() { // when a pin is clicked
+                        if (!'1') {
+                            document.location = marker.href;
+                            return;
+                        }
+                        var k = _circles.length;
+                        for (var j = 0; j < k; j++) { // add circles to each pin
+                            _circles[j].setMap((_circles[j].pid == marker.pid) ? map : null);
+                        }
+
+                        $.ajax({
+                            type: "GET",
+                            url: marker.ajax, // make the request to the API endpoint, ex: http://powpass.us/north-america/westcoast/washington/sitzmark-lifts.html?ajax=1
+                            success: function(data) {
+                                $('.map-side .content').empty().html(data); // empty the content area
+                                $.address.value(marker.href); // update the URL async
+                                $.address.title($('body').data('site-name') + ' - ' + marker.title); // update the title
+                                asideListeners(); // reasign click listener
+                                if (window.innerWidth <= 768) { // on mobile animate to content area
+                                    $("html, body").animate({
+                                        scrollTop: $('.map-side').offset().top
+                                    }, 240);
+                                }
+                            }
+                        });
+                        _clickedMarker = marker;
+                    });
+                })(marker, i);
+            }
+            // support jumping past map using sm URL param
+            if (window.innerWidth <= 768 && $('body').data('skip-map')) $("html, body").animate({
+                scrollTop: $('.map-side').offset().top
+            }, 240);
+
+            function asideListeners() {
+                $('h1 span').click(function(e) {
+                    if (_clickedMarker) {
+                        map.setCenter(marker.getPosition());
+                        map.setZoom(10);
+                    }
+                });
+            }
+            asideListeners();
+
+        });
+    </script>
+</body>
+
+</html>
